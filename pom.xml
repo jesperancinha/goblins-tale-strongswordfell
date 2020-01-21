@@ -1,0 +1,14 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <groupId>org.jesperancinha.goblin</groupId>
+    <artifactId>goblins-tale-stringswordfell</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.0-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>gilded-rose-kata</module>
+        <module>goblins-tale-creational</module>
+        <module>goblins-tale-structural</module>
+        <module>goblins-tale-behavioral</module>
+    </modules>
+</project>
