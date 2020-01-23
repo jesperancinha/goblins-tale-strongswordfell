@@ -1,4 +1,4 @@
-# gilded-rose-kata
+# goblins-tale-template-method
 
 ## About me
 

@@ -1,4 +1,4 @@
-# gilded-rose-kata
+# goblins-tale-command
 
 ## About me
 

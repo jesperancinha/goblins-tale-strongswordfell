@@ -1,4 +1,4 @@
-# gilded-rose-kata
+# goblins-tale-strategy
 
 ## About me
 

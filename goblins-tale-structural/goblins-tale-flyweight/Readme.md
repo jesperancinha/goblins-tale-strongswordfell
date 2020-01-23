@@ -1,4 +1,4 @@
-# gilded-rose-kata
+# goblins-tale-flyweight
 
 ## About me
 

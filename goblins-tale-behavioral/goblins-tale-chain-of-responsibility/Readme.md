@@ -1,4 +1,4 @@
-# gilded-rose-kata
+# goblins-tale-chain-of-responsibility
 
 ## About me
 

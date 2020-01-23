@@ -1,4 +1,4 @@
-# gilded-rose-kata
+# goblind-tale-mediator
 
 ## About me
 
