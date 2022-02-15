@@ -3,12 +3,63 @@
     <artifactId>goblins-tale-stringswordfell</artifactId>
     <packaging>pom</packaging>
     <version>0.0.0-SNAPSHOT</version>
+    <properties>
+        <java.version>17</java.version>
+        <maven-compiler-plugin.target>${java.version}</maven-compiler-plugin.target>
+        <maven-compiler-plugin.source>${java.version}</maven-compiler-plugin.source>
+        <omni-coveragereporter-maven-plugin.version>0.3.0</omni-coveragereporter-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.7</jacoco-maven-plugin.version>
+        <maven-compiler-plugin.version>3.10.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+    </properties>
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
-        <module>gilded-rose-kata</module>
         <module>goblins-tale-creational</module>
         <module>goblins-tale-structural</module>
         <module>goblins-tale-behavioral</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${maven-compiler-plugin.source}</source>
+                    <target>${maven-compiler-plugin.target}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.jesperancinha.plugins</groupId>
+                <artifactId>omni-coveragereporter-maven-plugin</artifactId>
+                <version>${omni-coveragereporter-maven-plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>

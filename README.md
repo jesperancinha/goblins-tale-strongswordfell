@@ -1,5 +1,7 @@
 # goblins-tale-strongswordfell
 
+
+
 ## Status
 
 [Under construction...](https://github.com/jesperancinha/project-signer/blob/master/project-signer-templates/UnderConstruction.md)
@@ -10,10 +12,10 @@
 
 ## Tools
 
-Use SDK 13:
+Use SDK 17:
 
 ```bash
-sdk use java 13.0.1.hs-adpt
+sdk install java 17-open
 ```
 
 ## References
@@ -21,6 +23,12 @@ sdk use java 13.0.1.hs-adpt
 -   [GildedRoseRequirements](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/master/GildedRoseRequirements.txt)
 
 -   [GildedRose-Refactoring-Kata](https://github.com/emilybache/GildedRose-Refactoring-Kata)
+
+## Buy me a coffee
+
+I hope you enjoyed this repository. If you did, you can optionally please buy me a coffee, which supports me in constantly improve and make new free content regularly for everyone. Thank you so much!
+
+[![Buy me a coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=jesperancinha&button_colour=046c46&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00 "title")](https://www.buymeacoffee.com/jesperancinha)
 
 ## About me 👨🏽‍💻🚀🏳️‍🌈
 
