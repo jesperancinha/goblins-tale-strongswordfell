@@ -21,6 +21,7 @@ updates:
           - "*maven*"
       kotlin:
         patterns:
+          - "*kotlin*"
 
   - package-ecosystem: "npm"
     directory: "/note-manager-web"
