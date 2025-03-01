@@ -4,6 +4,23 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+      spring:
+        patterns:
+          - "*spring*"
+      amazon:
+        patterns:
+          - "*amazon*"
+          - "*amazonaws*"
+          - "*aws*"
+      postgresql:
+        patterns:
+          - "*postgresql*"
+      maven:
+        patterns:
+          - "*maven*"
+      kotlin:
+        patterns:
 
   - package-ecosystem: "npm"
     directory: "/note-manager-web"
