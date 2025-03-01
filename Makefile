@@ -2,7 +2,11 @@ include Makefile.mk
 
 b: build-maven
 build-maven:
-	mvn clean install package -DskipTests
+	mvn clean install -DskipTests
+test-maven:
+	mvn test
+coverage-maven:
+	mvn package -DskipTests jacoco:prepare-agent package jacoco:report
 deps-plugins-update:
 	curl -sL https://raw.githubusercontent.com/jesperancinha/project-signer/master/pluginUpdatesOne.sh | bash -s -- $(PARAMS)
 deps-java-update:

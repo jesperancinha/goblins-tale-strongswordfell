@@ -18,8 +18,14 @@ jobs:
             java-version: '21'
             distribution: 'adopt'
 
-        - name: Build and Test
-          run:  mvn clean install jacoco:prepare-agent package jacoco:report
+        - name: Build
+          run:  make build-maven
+
+        - name: Test
+          run:  make test-maven
+
+        - name: Coverage
+          run:  make coverage-maven
 
         - name: Coverage Reports
           run: mvn omni-coveragereporter:report
