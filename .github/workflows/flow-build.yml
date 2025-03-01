@@ -18,11 +18,6 @@ jobs:
             java-version: '21'
             distribution: 'adopt'
 
-        - name: Setup Maven
-          uses: s4u/actions/setup-maven@v1
-          with:
-            maven-version: 3.9.9
-
         - name: Build and Test
           run:  mvn clean install jacoco:prepare-agent package jacoco:report
 
